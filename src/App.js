@@ -18,7 +18,7 @@ class App extends React.Component {
         <button
           onClick={this.handleClick.bind(this)}
           className="btn">
-          click {this.state.counter} times !
+          {this.state.counter} cookie!
           </button>
       </div>
     );
