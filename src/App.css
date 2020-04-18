@@ -6,5 +6,10 @@
 .main{
   width:500px;
   height:800px;
-  
+
+}
+button{
+  width:400px;
+  border-radius: 10px;
+  background-color: white;
 }
