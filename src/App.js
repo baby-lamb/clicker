@@ -20,6 +20,7 @@ class App extends React.Component {
           className="btn">
           {this.state.counter} cookie!
           </button>
+          <img src="#" value="cookie" />
       </div>
     );
   }
