@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-
+import cookie from './img/cookie.png';
 
 class App extends React.Component {
   constructor(props){
@@ -16,11 +16,28 @@ class App extends React.Component {
     return (
       <div className="App">
         <button
-          onClick={this.handleClick.bind(this)}
           className="btn">
           {this.state.counter} cookie!
           </button>
-          <img src="#" value="cookie" />
+          <div className="cookie">
+            <img src={cookie} value="cookie"
+              onClick={this.handleClick.bind(this)} />
+          </div>
+          <ul>
+            <li>+1</li>
+            <li>+5</li>
+            <li>+10</li>
+            <li>+20</li>
+            <li>+50</li>
+          </ul>
+
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
       </div>
     );
   }
