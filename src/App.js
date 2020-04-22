@@ -12,13 +12,20 @@ class App extends React.Component {
   handleClick(event){
     this.setState({counter: ++this.state.counter})
   }
+  handleSecound(event){
+    this.setState({counter: setInterval(++this.counter,1000)})
+
+
+  }
+
   render(){
     return (
       <div className="App">
-        <button
-          className="btn">
+        <div
+          className="haveCookie">
           {this.state.counter} cookie!
-          </button>
+        </div>
+
           <div className="cookie">
             <img src={cookie} value="cookie"
               onClick={this.handleClick.bind(this)} />
@@ -32,7 +39,8 @@ class App extends React.Component {
           </ul>
 
           <ul>
-            <li>1</li>
+            <li
+              onClick={this.handleSecound.bind(this)}>1</li>
             <li>2</li>
             <li>3</li>
             <li>4</li>
