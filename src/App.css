@@ -74,7 +74,7 @@ ul li:last-child{
 
 
 
-/* @-webkit-keyframes _click{
+@-webkit-keyframes _click{
   0% {
     width:98%;
     height:98%;
@@ -89,6 +89,6 @@ ul li:last-child{
     width:100%;
     height:100%;
     animation-delay: 1.5s;
-  } */
-  
+  }
+
 }
