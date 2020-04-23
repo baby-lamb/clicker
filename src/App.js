@@ -6,14 +6,18 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
+      counter : 0,
+      time : [0, 5, 10, 20, 50],
+      second : [1, 2, 3, 4, 5]
     }
   }
+
   handleClick(event){
-    this.setState({counter: ++this.state.counter})
+    this.setState({counter: ++this.state.time})
   }
+
   handleSecound(event){
     this.setState({counter: setInterval(++this.counter,1000)})
-
 
   }
 
@@ -30,7 +34,9 @@ class App extends React.Component {
               onClick={this.handleClick.bind(this)} />
           </div>
           <ul>
-            <li>+1</li>
+            <li
+
+            >+1</li>
             <li>+5</li>
             <li>+10</li>
             <li>+20</li>
