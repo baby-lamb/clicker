@@ -7,13 +7,31 @@ class App extends React.Component {
     super(props)
     this.state = {
       counter : 0,
-      time : [0, 5, 10, 20, 50],
-      second : [1, 2, 3, 4, 5]
     }
   }
 
   handleClick(event){
-    this.setState({counter: ++this.state.time})
+    this.setState({counter: ++this.state.counter})
+  }
+
+  handleClickOne(event){
+    this.setState({counter: +2+this.state.counter})
+  }
+
+  handleClickTwo(event){
+    this.setState({counter: +5+this.state.counter})
+  }
+
+  handleClickThree(event){
+    this.setState({counter: +10+this.state.counter})
+  }
+
+  handleClickFour(event){
+    this.setState({counter: +20+this.state.counter})
+  }
+
+  handleClickFive(event){
+    this.setState({counter: +50+this.state.counter})
   }
 
   handleSecound(event){
@@ -36,12 +54,19 @@ class App extends React.Component {
           </div>
           <ul>
             <li
-              onClick={this.handleClick.bind(this)}
-            >+1</li>
-            <li>+5</li>
-            <li>+10</li>
-            <li>+20</li>
-            <li>+50</li>
+              onClick={this.handleClickOne.bind(this)}>
+              +1
+            </li>
+            <li
+              onClick={this.handleClickTwo.bind(this)}>+5</li>
+            <li
+              onClick={this.handleClickThree.bind(this)}>+10</li>
+            <li
+              onClick={this.handleClickFour.bind(this)}
+            >+20</li>
+            <li
+              onClick={this.handleClickFive.bind(this)}
+            >+50</li>
           </ul>
 
           <ul>
@@ -52,6 +77,7 @@ class App extends React.Component {
             <li>4</li>
             <li>5</li>
           </ul>
+
       </div>
     );
   }
