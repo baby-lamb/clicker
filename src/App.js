@@ -25,7 +25,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <div
-          className="haveCookie">
+          className="haveCookie"
+          >
           {this.state.counter} cookie!
         </div>
 
@@ -35,7 +36,7 @@ class App extends React.Component {
           </div>
           <ul>
             <li
-
+              onClick={this.handleClick.bind(this)}
             >+1</li>
             <li>+5</li>
             <li>+10</li>
