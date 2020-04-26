@@ -5,25 +5,17 @@ import cookie from './img/cookie.png';
 class App extends React.Component {
   constructor(props){
     super(props)
-    const click=[2, 5, 10];
     this.state = {
       counter : 0,
     }
   }
 
-  handler(evnet){
-
+  handleClick(click){
+    this.setState({counter: +click+this.state.counter})
   }
-
-  handleClick(event){
-    this.setState({counter: ++this.state.counter})
-
+  handleMultiply(multiply){
+    this.setState({counter: multiply*this.state.counter})
   }
-  handleClickOne(event){
-    this.setState({counter: +2+this.state.counter})
-  }
-
-
 
   render(){
 
@@ -37,35 +29,41 @@ class App extends React.Component {
 
           <div className="cookie">
             <img src={cookie} value="cookie"
-              onClick={this.handleClick.bind(this)} />
+              onClick={this.handleClick.bind(this)}/>
           </div>
           <ul>
             <li
-              onClick={this.handleClick.bind(this)}
+              onClick={this.handleClick.bind(this, 1)}
               >
               +1
             </li>
             <li
-              onClick={this.handleClick.bind(this)}
+              onClick={this.handleClick.bind(this, 5)}
               >+5</li>
             <li
-              >+10</li>
+              onClick={this.handleClick.bind(this, 10)}
+            >+10</li>
             <li
-
+              onClick={this.handleClick.bind(this, 20)}
             >+20</li>
             <li
-
+              onClick={this.handleClick.bind(this, 50)}
             >+50</li>
-
           </ul>
 
           <ul>
             <li
-              >1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+              onClick={this.handleMultiply.bind(this, 2)}
+              >x2</li>
+            <li
+              onClick={this.handleMultiply.bind(this, 3)}>x3</li>
+            <li
+              onClick={this.handleMultiply.bind(this, 4)}
+            >x4</li>
+            <li
+              onClick={this.handleMultiply.bind(this, 5)}>x5</li>
+            <li
+              onClick={this.handleMultiply.bind(this, 6)}>x6</li>
           </ul>
 
       </div>
