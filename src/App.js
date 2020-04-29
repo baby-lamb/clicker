@@ -65,7 +65,13 @@ class App extends React.Component {
             <li
               onClick={this.handleMultiply.bind(this, 6)}>x6</li>
           </ul>
-
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
       </div>
     );
   }
