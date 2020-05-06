@@ -35,20 +35,20 @@ class App extends React.Component {
             <li
               onClick={this.handleClick.bind(this, 1)}
               >
-              +1
+              100
             </li>
             <li
               onClick={this.handleClick.bind(this, 5)}
-              >+5</li>
+              >200</li>
             <li
               onClick={this.handleClick.bind(this, 10)}
-            >+10</li>
+            >400</li>
             <li
               onClick={this.handleClick.bind(this, 20)}
-            >+20</li>
+            >800</li>
             <li
               onClick={this.handleClick.bind(this, 50)}
-            >+50</li>
+            >1000</li>
           </ul>
 
           <ul>
