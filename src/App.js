@@ -68,7 +68,8 @@ class App extends React.Component {
           <ul>
             <li
               onClick={}>1</li>
-            <li>2</li>
+            <li
+              onClick={}>2</li>
             <li>3</li>
             <li>4</li>
             <li>5</li>
