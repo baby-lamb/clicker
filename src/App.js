@@ -13,8 +13,9 @@ class App extends React.Component {
   handleClick(click){
     this.setState({counter: +click+this.state.counter})
   }
-  handleMultiply(multiply){
+  handleMultiply(multiply, x){
     this.setState({counter: multiply*this.state.counter})
+    this.setState({counter: this.state.counter-x})
   }
 
   render(){
@@ -53,17 +54,17 @@ class App extends React.Component {
 
           <ul>
             <li
-              onClick={this.handleMultiply.bind(this, 2)}
+              onClick={this.handleMultiply.bind(this, 2, 100)}
               >x2</li>
             <li
-              onClick={this.handleMultiply.bind(this, 3)}>x3</li>
+              onClick={this.handleMultiply.bind(this, 3, 200)}>x3</li>
             <li
-              onClick={this.handleMultiply.bind(this, 4)}
+              onClick={this.handleMultiply.bind(this, 4, 300)}
             >x4</li>
             <li
-              onClick={this.handleMultiply.bind(this, 5)}>x5</li>
+              onClick={this.handleMultiply.bind(this, 5, 400)}>x5</li>
             <li
-              onClick={this.handleMultiply.bind(this, 6)}>x6</li>
+              onClick={this.handleMultiply.bind(this, 6, 500)}>x6</li>
           </ul>
           <ul>
             <li
