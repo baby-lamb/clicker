@@ -73,8 +73,9 @@ class App extends React.Component {
             <li
               onClick={}>3</li>
             <li
-              onClicm={}>4</li>
-            <li>5</li>
+              onClick={}>4</li>
+            <li
+              onClick={}>5</li>
           </ul>
       </div>
     );
