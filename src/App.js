@@ -24,6 +24,7 @@ class App extends React.Component {
       <div className="App">
         <div
           className="haveCookie"
+          {this.props.counter}
           >
           {this.state.counter} cookie!
         </div>
