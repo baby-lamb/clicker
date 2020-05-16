@@ -6,16 +6,26 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      counter : 0,
+      counter : 1,
     }
   }
 
   handleClick(click){
-    this.setState({counter: +click+this.state.counter})
+    if( Math.sign(this.state.counter) === 1 ){
+      this.setState({counter: +click+this.state.counter})
+    }
+    else{
+      alert("Don't have a Cookie");
+    }
   }
   handleMultiply(multiply, x){
     this.setState({counter: multiply*this.state.counter})
     this.setState({counter: this.state.counter-x})
+  }
+  handleCookieClick(){
+    const cookie = this.state.cookie.slice();
+    cookie = this.state.counter;
+    this.setState({cookie: cookie});
   }
 
   render(){
@@ -24,7 +34,7 @@ class App extends React.Component {
       <div className="App">
         <div
           className="haveCookie"
-          {this.state.counter}
+          onClick={this.handleCookieClick.bind(this)}
           >
           {this.state.counter} cookie!
         </div>
@@ -35,21 +45,21 @@ class App extends React.Component {
           </div>
           <ul>
             <li
-              onClick={this.handleClick.bind(this, 1)}
+              onClick={this.handleClick.bind(this, 1, 100)}
               >
               100
             </li>
             <li
-              onClick={this.handleClick.bind(this, 5)}
+              onClick={this.handleClick.bind(this, 5, 200)}
               >200</li>
             <li
-              onClick={this.handleClick.bind(this, 10)}
+              onClick={this.handleClick.bind(this, 10, 400)}
             >400</li>
             <li
-              onClick={this.handleClick.bind(this, 20)}
+              onClick={this.handleClick.bind(this, 20, 800)}
             >800</li>
             <li
-              onClick={this.handleClick.bind(this, 50)}
+              onClick={this.handleClick.bind(this, 50, 1000)}
             >1000</li>
           </ul>
 
@@ -68,16 +78,12 @@ class App extends React.Component {
               onClick={this.handleMultiply.bind(this, 6, 500)}>x6</li>
           </ul>
           <ul>
-            <li
-              onClick={}>1</li>
-            <li
-              onClick={}>2</li>
-            <li
-              onClick={}>3</li>
-            <li
-              onClick={}>4</li>
-            <li
-              onClick={}>5</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
           </ul>
       </div>
     );
