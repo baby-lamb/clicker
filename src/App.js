@@ -6,26 +6,28 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      counter : 1,
+      counter : 101,
     }
   }
 
-  handleClick(click){
-    if( Math.sign(this.state.counter) === 1 ){
+  handleClick(click, x){
+    if( Math.sign(this.state.counter) >= 100 ){
       this.setState({counter: +click+this.state.counter})
+      this.setState({counter: this.state.counter-x})
     }
     else{
       alert("Don't have a Cookie");
     }
   }
+
   handleMultiply(multiply, x){
     this.setState({counter: multiply*this.state.counter})
     this.setState({counter: this.state.counter-x})
   }
-  handleCookieClick(){
-    const cookie = this.state.cookie.slice();
-    cookie = this.state.counter;
-    this.setState({cookie: cookie});
+
+  handleCookieClick(x){
+
+    this.setState({counter: this.stste.counter+x})
   }
 
   render(){
