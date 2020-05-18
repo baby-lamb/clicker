@@ -7,26 +7,32 @@ class App extends React.Component {
     super(props)
     this.state = {
       counter : 101,
+      x : 0,
     }
   }
 
   handleClick(click, x){
-    if( Math.sign(this.state.counter) >= 100 ){
+    if( this.state.counter > x ){
       this.setState({counter: +click+this.state.counter})
       this.setState({counter: this.state.counter-x})
+      var x = x;
     }
     else{
       alert("Don't have a Cookie");
     }
   }
 
-  handleMultiply(multiply, x){
+  handleMultiply(multiply, y){
+    if( this.state.counter > y ){
     this.setState({counter: multiply*this.state.counter})
-    this.setState({counter: this.state.counter-x})
+    this.setState({counter: this.state.counter-y})
+    }
+    else{
+      alert("Don't have a Cookie")
+    }
   }
 
   handleCookieClick(x){
-
     this.setState({counter: this.stste.counter+x})
   }
 
@@ -46,47 +52,71 @@ class App extends React.Component {
               onClick={this.handleClick.bind(this)}/>
           </div>
           <ul>
-            <li
-              onClick={this.handleClick.bind(this, 1, 100)}
-              >
-              100
+            <li>
+              <a
+              onClick={this.handleClick.bind(this, 1, 100)}>
+                100
+              </a>
             </li>
-            <li
-              onClick={this.handleClick.bind(this, 5, 200)}
-              >200</li>
-            <li
-              onClick={this.handleClick.bind(this, 10, 400)}
-            >400</li>
-            <li
-              onClick={this.handleClick.bind(this, 20, 800)}
-            >800</li>
-            <li
-              onClick={this.handleClick.bind(this, 50, 1000)}
-            >1000</li>
+            <li>
+              <a
+              onClick={this.handleClick.bind(this, 5, 200)}>
+                200
+              </a>
+            </li>
+            <li>
+              <a
+              onClick={this.handleClick.bind(this, 10, 400)}>
+                400
+              </a>
+            </li>
+            <li>
+              <a
+              onClick={this.handleClick.bind(this, 20, 800)}>
+                800
+              </a>
+            </li>
+            <li>
+              <a
+              onClick={this.handleClick.bind(this, 50, 1000)}>
+                1000
+              </a>
+            </li>
           </ul>
 
           <ul>
-            <li
-              onClick={this.handleMultiply.bind(this, 2, 100)}
-              >x2</li>
-            <li
-              onClick={this.handleMultiply.bind(this, 3, 200)}>x3</li>
-            <li
-              onClick={this.handleMultiply.bind(this, 4, 300)}
-            >x4</li>
-            <li
-              onClick={this.handleMultiply.bind(this, 5, 400)}>x5</li>
-            <li
-              onClick={this.handleMultiply.bind(this, 6, 500)}>x6</li>
+            <li>
+              <a
+              onClick={this.handleMultiply.bind(this, 2, 1000)}
+              >x2
+              </a>
+            </li>
+            <li>
+              <a
+              onClick={this.handleMultiply.bind(this, 2, 2000)}
+              >x3
+              </a>
+            </li>
+            <li>
+              <a
+              onClick={this.handleMultiply.bind(this, 2, 3000)}
+              >x4
+              </a>
+            </li>
+            <li>
+              <a
+              onClick={this.handleMultiply.bind(this, 2, 4000)}
+              >x5
+              </a>
+            </li>
+            <li>
+              <a
+              onClick={this.handleMultiply.bind(this, 2, 5000)}
+              >x6
+              </a>
+            </li>
           </ul>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
 
-          </ul>
       </div>
     );
   }
