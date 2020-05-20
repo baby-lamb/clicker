@@ -6,8 +6,8 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      counter : 101,
-      x : 0,
+      counter : 201,
+      x : 1,
     }
   }
 
@@ -15,7 +15,7 @@ class App extends React.Component {
     if( this.state.counter > x ){
       this.setState({counter: +click+this.state.counter})
       this.setState({counter: this.state.counter-x})
-      var x = x;
+      this.setState({x : this.state.x*0+click})
     }
     else{
       alert("Don't have a Cookie");
@@ -33,7 +33,8 @@ class App extends React.Component {
   }
 
   handleCookieClick(x){
-    this.setState({counter: this.stste.counter+x})
+    this.setState({counter: this.state.counter+x})
+
   }
 
   render(){
@@ -41,15 +42,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <div
-          className="haveCookie"
-          onClick={this.handleCookieClick.bind(this)}
-          >
+          className="haveCookie">
           {this.state.counter} cookie!
         </div>
 
           <div className="cookie">
             <img src={cookie} value="cookie"
-              onClick={this.handleClick.bind(this)}/>
+              onClick={this.handleCookieClick.bind(this, this.state.x)}/>
           </div>
           <ul>
             <li>
