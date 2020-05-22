@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/baby-lamb/clicker/static/css/main.bead91d7.chunk.css",
+    "main.js": "/baby-lamb/clicker/static/js/main.80af9500.chunk.js",
+    "main.js.map": "/baby-lamb/clicker/static/js/main.80af9500.chunk.js.map",
+    "runtime-main.js": "/baby-lamb/clicker/static/js/runtime-main.bb7bd4d2.js",
+    "runtime-main.js.map": "/baby-lamb/clicker/static/js/runtime-main.bb7bd4d2.js.map",
+    "static/js/2.867f7dd5.chunk.js": "/baby-lamb/clicker/static/js/2.867f7dd5.chunk.js",
+    "static/js/2.867f7dd5.chunk.js.map": "/baby-lamb/clicker/static/js/2.867f7dd5.chunk.js.map",
+    "index.html": "/baby-lamb/clicker/index.html",
+    "precache-manifest.7af384ca1491e156144de486a5cdbb6f.js": "/baby-lamb/clicker/precache-manifest.7af384ca1491e156144de486a5cdbb6f.js",
+    "service-worker.js": "/baby-lamb/clicker/service-worker.js",
+    "static/css/main.bead91d7.chunk.css.map": "/baby-lamb/clicker/static/css/main.bead91d7.chunk.css.map",
+    "static/js/2.867f7dd5.chunk.js.LICENSE.txt": "/baby-lamb/clicker/static/js/2.867f7dd5.chunk.js.LICENSE.txt",
+    "static/media/cookie.png": "/baby-lamb/clicker/static/media/cookie.1550cf1f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb7bd4d2.js",
+    "static/js/2.867f7dd5.chunk.js",
+    "static/css/main.bead91d7.chunk.css",
+    "static/js/main.80af9500.chunk.js"
+  ]
+}
