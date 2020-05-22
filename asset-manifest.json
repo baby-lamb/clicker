@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/baby-lamb/clicker/static/css/main.bead91d7.chunk.css",
-    "main.js": "/baby-lamb/clicker/static/js/main.80af9500.chunk.js",
-    "main.js.map": "/baby-lamb/clicker/static/js/main.80af9500.chunk.js.map",
-    "runtime-main.js": "/baby-lamb/clicker/static/js/runtime-main.bb7bd4d2.js",
-    "runtime-main.js.map": "/baby-lamb/clicker/static/js/runtime-main.bb7bd4d2.js.map",
-    "static/js/2.867f7dd5.chunk.js": "/baby-lamb/clicker/static/js/2.867f7dd5.chunk.js",
-    "static/js/2.867f7dd5.chunk.js.map": "/baby-lamb/clicker/static/js/2.867f7dd5.chunk.js.map",
-    "index.html": "/baby-lamb/clicker/index.html",
-    "precache-manifest.7af384ca1491e156144de486a5cdbb6f.js": "/baby-lamb/clicker/precache-manifest.7af384ca1491e156144de486a5cdbb6f.js",
-    "service-worker.js": "/baby-lamb/clicker/service-worker.js",
-    "static/css/main.bead91d7.chunk.css.map": "/baby-lamb/clicker/static/css/main.bead91d7.chunk.css.map",
-    "static/js/2.867f7dd5.chunk.js.LICENSE.txt": "/baby-lamb/clicker/static/js/2.867f7dd5.chunk.js.LICENSE.txt",
-    "static/media/cookie.png": "/baby-lamb/clicker/static/media/cookie.1550cf1f.png"
+    "main.css": "/clicker/static/css/main.bead91d7.chunk.css",
+    "main.js": "/clicker/static/js/main.7a33f7e1.chunk.js",
+    "main.js.map": "/clicker/static/js/main.7a33f7e1.chunk.js.map",
+    "runtime-main.js": "/clicker/static/js/runtime-main.e29ea3f6.js",
+    "runtime-main.js.map": "/clicker/static/js/runtime-main.e29ea3f6.js.map",
+    "static/js/2.867f7dd5.chunk.js": "/clicker/static/js/2.867f7dd5.chunk.js",
+    "static/js/2.867f7dd5.chunk.js.map": "/clicker/static/js/2.867f7dd5.chunk.js.map",
+    "index.html": "/clicker/index.html",
+    "precache-manifest.2afef0380b495db8ad7fbad62ebbe4db.js": "/clicker/precache-manifest.2afef0380b495db8ad7fbad62ebbe4db.js",
+    "service-worker.js": "/clicker/service-worker.js",
+    "static/css/main.bead91d7.chunk.css.map": "/clicker/static/css/main.bead91d7.chunk.css.map",
+    "static/js/2.867f7dd5.chunk.js.LICENSE.txt": "/clicker/static/js/2.867f7dd5.chunk.js.LICENSE.txt",
+    "static/media/cookie.png": "/clicker/static/media/cookie.1550cf1f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb7bd4d2.js",
+    "static/js/runtime-main.e29ea3f6.js",
     "static/js/2.867f7dd5.chunk.js",
     "static/css/main.bead91d7.chunk.css",
-    "static/js/main.80af9500.chunk.js"
+    "static/js/main.7a33f7e1.chunk.js"
   ]
 }
