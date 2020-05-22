@@ -52,7 +52,7 @@ class App extends React.Component {
           </div>
           <ul>
             <li>
-              <a
+              <a 
               onClick={this.handleClick.bind(this, 1, 100)}>
                 100
               </a>
