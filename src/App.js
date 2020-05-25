@@ -41,18 +41,24 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <div
-          className="haveCookie">
+        <div className="haveCookie">
           {this.state.counter} cookie!
         </div>
-
+          <div className="plusCookie">+ 100 cookie</div>
           <div className="cookie">
             <img src={cookie} value="cookie"
               onClick={this.handleCookieClick.bind(this, this.state.x)}/>
           </div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           <ul>
             <li>
-              <a 
+              <a
               onClick={this.handleClick.bind(this, 1, 100)}>
                 100
               </a>

@@ -29,7 +29,7 @@ ul li{
   border-radius: 10px;
   background-color: white;
   position: absolute;
-  top:30px;
+  top:40px;
   left:50%;
   transform: translateX(-50%);
   border: 2px solid black;
@@ -38,13 +38,18 @@ ul li{
   line-height:40px;
   text-align: center;
 }
-
+.plusCookie{
+  position: absolute;
+  top:83px;
+  left:33%;
+  font-size:20px;
+}
 
 .cookie{
   width:300px;
   height:300px;
   margin:auto;
-  padding:120px 0 20px 0;
+  padding:140px 0 20px 0;
   cursor: pointer;
 
 }
