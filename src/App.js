@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import cookie from './img/cookie.png';
+import shop from './img/shop.png';
 
 class App extends React.Component {
   constructor(props){
@@ -50,11 +51,11 @@ class App extends React.Component {
               onClick={this.handleCookieClick.bind(this, this.state.x)}/>
           </div>
             <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
+              <li><img src={shop} /></li>
+              <li><img src={shop} /></li>
+              <li><img src={shop} /></li>
+              <li><img src={shop} /></li>
+              <li><img src={shop} /></li>
             </ul>
           <ul>
             <li>
