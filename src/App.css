@@ -10,11 +10,14 @@ ul li{
 *{
   font-weight: 400;
 }
+.block{
+  display: block;
+}
 
 
 .App{
   width:500px;
-  height:600px;
+  height:650px;
   background-color: #fff;
   border-radius: 10px;
   position: absolute;
@@ -49,11 +52,19 @@ ul li{
   width:300px;
   height:300px;
   margin:auto;
-  padding:140px 0 20px 0;
+  padding:140px 0 10px 0;
   cursor: pointer;
 
 }
 
+.shop{
+  margin-bottom: 30px;
+}
+.shop li {
+  width:50px;
+  height:50px;
+  display: none;
+}
 
 ul {
   width:300px;
@@ -79,6 +90,9 @@ ul li a{
   line-height:25px;
   text-align: center;
   font-size:17px;
+}
+.shop li:first-child{
+  margin-left:4px;
 }
 
 .buttonClick{

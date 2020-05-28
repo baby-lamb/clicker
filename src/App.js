@@ -50,7 +50,7 @@ class App extends React.Component {
             <img src={cookie} value="cookie"
               onClick={this.handleCookieClick.bind(this, this.state.x)}/>
           </div>
-            <ul>
+            <ul className="shop">
               <li><img src={shop} /></li>
               <li><img src={shop} /></li>
               <li><img src={shop} /></li>
