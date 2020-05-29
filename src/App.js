@@ -27,6 +27,7 @@ class App extends React.Component {
     if( this.state.counter > y ){
     this.setState({counter: multiply*this.state.counter})
     this.setState({counter: this.state.counter-y})
+    this.setState({})
     }
     else{
       alert("Don't have a Cookie")
