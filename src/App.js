@@ -95,31 +95,31 @@ class App extends React.Component {
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 1000)}
-              >x2
+              >+1/Second
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 2000)}
-              >x3
+              >+2/Second
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 3000)}
-              >x4
+              >+3/Second
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 4000)}
-              >x5
+              >+4/Second
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 5000)}
-              >x6
+              >+5/Second
               </a>
             </li>
           </ul>
