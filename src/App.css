@@ -10,7 +10,7 @@ ul li{
 *{
   font-weight: 400;
 }
-.block{
+.see{
   display: block;
 }
 
@@ -65,6 +65,7 @@ ul li{
   height:50px;
   display: none;
 }
+
 
 ul {
   width:300px;

@@ -73,8 +73,8 @@ class App extends React.Component {
             </li>
             <li>
               <a
-              onClick={this.handleClick.bind(this, 10, 400)}>
-                400
+              onClick={this.handleClick.bind(this, 10, 500)}>
+                500
               </a>
             </li>
             <li>
