@@ -36,7 +36,7 @@ class App extends React.Component {
 
   handleCookieClick(x){
     this.setState({counter: this.state.counter+x})
-    addClass()
+    addClass(".see")
   }
 
   render(){
