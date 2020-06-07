@@ -53,10 +53,10 @@ class App extends React.Component {
           </div>
             <ul className="shop">
               <li><img src={shop} className={this.state.isOn ? 'none' : 'see'} /></li>
-              <li><img src={shop} /></li>
-              <li><img src={shop} /></li>
-              <li><img src={shop} /></li>
-              <li><img src={shop} /></li>
+              <li><img src={shop} className={this.state.isOn ? 'none' : 'see'} /></li>
+              <li><img src={shop} className={this.state.isOn ? 'none' : 'see'} /></li>
+              <li><img src={shop} className={this.state.isOn ? 'none' : 'see'} /></li>
+              <li><img src={shop} className={this.state.isOn ? 'none' : 'see'} /></li>
             </ul>
           <ul>
             <li>
