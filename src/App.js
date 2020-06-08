@@ -9,18 +9,23 @@ class App extends React.Component {
     this.state = {
       counter : 5500,
       x : 1,
+
     }
   }
 
+
   handleClick(click, x){
+    const { isOn } = this.state;
+    this.setState({
+      isOn: !isOn,
+      isOn: true,
+    });
+
     if( this.state.counter > x ){
       this.setState({counter: +click+this.state.counter})
       this.setState({counter: this.state.counter-x})
       this.setState({x : this.state.x*0+click})
-      const { isOn } = this.state;
-      this.setState({
-        isOn: !isOn
-      });
+
     }
     else{
       alert("Don't have a Cookie");
@@ -28,15 +33,18 @@ class App extends React.Component {
   }
 
   handleMultiply(multiply, y){
+    const { isOn } = this.state;
+    this.setState({
+      isOn: !isOn,
+      isOn: true,
+    });
     if( this.state.counter > y ){
     this.setState({counter: multiply*this.state.counter})
     this.setState({counter: this.state.counter-y})
-    const { isOn } = this.state;
-    this.setState({
-      isOn: !isOn
-    });
     }
-
+    else if ( isOn === true ){
+      alert("no")
+    }
     else{
       alert("Don't have a Cookie")
     }
@@ -107,30 +115,35 @@ class App extends React.Component {
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 1000)}
+              className={this.state.isOn ? 'off' : null }
               >+1/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 2000)}
+              className={this.state.isOn ? 'off' : null }
               >+2/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 3000)}
+              className={this.state.isOn ? 'off' : null }
               >+3/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 4000)}
+              className={this.state.isOn ? 'off' : null }
               >+4/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 5000)}
+              className={this.state.isOn ? 'off' : null }
               >+5/s
               </a>
             </li>
