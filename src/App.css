@@ -18,6 +18,13 @@ ul li{
 .none{
   display:none;
 }
+.off{
+  color:#000;
+  background-color: #585858;
+  border:2px solid #333333;
+}
+
+
 
 
 .App{
