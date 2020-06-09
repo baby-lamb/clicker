@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      counter : 5500,
+      counter : 5000,
       x : 1,
 
     }
@@ -36,17 +36,17 @@ class App extends React.Component {
     const { isOn } = this.state;
     this.setState({
       isOn: !isOn,
-      isOn: true,
     });
-    if( this.state.counter > y ){
+    if( this.state.isOn !== true && this.state.counter >= y ){
     this.setState({counter: multiply*this.state.counter})
     this.setState({counter: this.state.counter-y})
+    this.setState({className: this.state.isOn ? 'off' : null })
     }
-    else if ( isOn === true ){
-      alert("no")
+    else if( this.state.isOn === true && this.state.counter > y ){
+      alert("이미 구매했습니다.")
     }
-    else{
-      alert("Don't have a Cookie")
+    else if( this.state.isOn !== true && this.state.counter < y ){
+      alert("쿠키가 부족합니다.")
     }
   }
 
@@ -67,38 +67,34 @@ class App extends React.Component {
               onClick={this.handleCookieClick.bind(this, this.state.x)}/>
           </div>
             <ul className="shop">
-              <li><img src={shop} className={this.state.isOn ? 'see' : 'none'} /></li>
-              <li><img src={shop} className={this.state.isOn ? 'see' : 'none'} /></li>
-              <li><img src={shop} className={this.state.isOn ? 'see' : 'none'} /></li>
-              <li><img src={shop} className={this.state.isOn ? 'see' : 'none'} /></li>
+              <li><img src={shop} /></li>
+              <li><img src={shop} /></li>
+              <li><img src={shop} /></li>
+              <li><img src={shop} /></li>
               <li><img src={shop} className={this.state.isOn ? 'see' : 'none'} /></li>
             </ul>
           <ul>
             <li>
               <a
-              onClick={this.handleClick.bind(this, 1, 100)}
-              className={this.state.isOn ? 'off' : null } >
+              onClick={this.handleClick.bind(this, 1, 100)}>
                 100
               </a>
             </li>
             <li>
               <a
-              onClick={this.handleClick.bind(this, 5, 200)}
-              className={this.state.isOn ? 'off' : null } >
+              onClick={this.handleClick.bind(this, 5, 200)}>
                 200
               </a>
             </li>
             <li>
               <a
-              onClick={this.handleClick.bind(this, 10, 500)}
-              className={this.state.isOn ? 'off' : null } >
+              onClick={this.handleClick.bind(this, 10, 500)}>
                 500
               </a>
             </li>
             <li>
               <a
-              onClick={this.handleClick.bind(this, 20, 800)}
-              className={this.state.isOn ? 'off' : null } >
+              onClick={this.handleClick.bind(this, 20, 800)}>
                 800
               </a>
             </li>
@@ -115,35 +111,35 @@ class App extends React.Component {
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 1000)}
-              className={this.state.isOn ? 'off' : null }
+
               >+1/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 2000)}
-              className={this.state.isOn ? 'off' : null }
+
               >+2/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 3000)}
-              className={this.state.isOn ? 'off' : null }
+
               >+3/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 4000)}
-              className={this.state.isOn ? 'off' : null }
+
               >+4/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 5000)}
-              className={this.state.isOn ? 'off' : null }
+
               >+5/s
               </a>
             </li>
