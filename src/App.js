@@ -67,8 +67,8 @@ class App extends React.Component {
               onClick={this.handleCookieClick.bind(this, this.state.x)}/>
           </div>
             <ul className="shop">
-              <li><img src={shop} ></li>
-              <li><img src={shop} className={this.state.isOn ? 'see' : 'none'} /></li>
+              <li><img src={shop} /></li>
+              <li><img src={shop} /></li>
               <li><img src={shop} className={this.state.isOn ? 'see' : 'none'} /></li>
               <li><img src={shop} className={this.state.isOn ? 'see' : 'none'} /></li>
               <li><img src={shop} className={this.state.isOn ? 'see' : 'none'} /></li>
