@@ -94,7 +94,8 @@ class App extends React.Component {
             </li>
             <li>
               <a
-              onClick={this.handleClick.bind(this, 20, 800)}>
+              onClick={this.handleClick.bind(this, 20, 800)}
+              className={this.state.isOn ? 'off' : null }>
                 800
               </a>
             </li>
