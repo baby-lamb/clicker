@@ -112,35 +112,35 @@ class App extends React.Component {
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 1000)}
-
+              className={this.state.isOn ? 'off' : null }
               >+1/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 2000)}
-
+              className={this.state.isOn ? 'off' : null }
               >+2/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 3000)}
-
+              className={this.state.isOn ? 'off' : null }
               >+3/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 4000)}
-
+              className={this.state.isOn ? 'off' : null }
               >+4/s
               </a>
             </li>
             <li>
               <a
               onClick={this.handleMultiply.bind(this, 2, 5000)}
-
+              className={this.state.isOn ? 'off' : null }
               >+5/s
               </a>
             </li>
